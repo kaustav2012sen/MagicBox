@@ -64,3 +64,4 @@ D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.Web.xml
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.dll
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.pdb
+D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.csprojResolveAssemblyReference.cache
