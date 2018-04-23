@@ -142,6 +142,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ClientController.cs" />
+    <Compile Include="Controllers\JobController.cs" />
+    <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\SettingsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -256,6 +258,12 @@
     <Content Include="Views\Client\ClientList.cshtml" />
     <Content Include="Views\Client\AddEditClient.cshtml" />
     <Content Include="Views\Settings\GeneralSettings.cshtml" />
+    <Content Include="Views\Job\JobDetails.cshtml" />
+    <Content Include="Views\Job\AddEditJob.cshtml" />
+    <Content Include="Views\Reports\DailyReport.cshtml" />
+    <Content Include="Views\Reports\MonthlyReport.cshtml" />
+    <Content Include="Views\Reports\BillingDetails.cshtml" />
+    <Content Include="Views\Reports\PaymentTracker.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
