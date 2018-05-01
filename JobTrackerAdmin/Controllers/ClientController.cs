@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JobTrackerAdmin.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,13 +9,15 @@ namespace JobTrackerAdmin.Controllers
 {
     public class ClientController : Controller
     {
+        DataContext db = new DataContext();
         // GET: Client
-        public ActionResult ClientList()
+        public ActionResult ClientDetails()
         {
-            return View();
+            var data = db.Clients.ToList();
+            return View(data);
         }
 
-        public ActionResult AddEditClient()
+        public ActionResult ClientAddEdit()
         {
             return View();
         }

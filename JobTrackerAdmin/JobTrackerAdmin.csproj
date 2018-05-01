@@ -45,6 +45,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -148,6 +157,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\DataContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -255,8 +266,6 @@
     <Content Include="Views\Shared\_navmenu.cshtml" />
     <Content Include="Views\Shared\_leftnavmenu.cshtml" />
     <Content Include="Views\Shared\_footer.cshtml" />
-    <Content Include="Views\Client\ClientList.cshtml" />
-    <Content Include="Views\Client\AddEditClient.cshtml" />
     <Content Include="Views\Settings\GeneralSettings.cshtml" />
     <Content Include="Views\Job\JobDetails.cshtml" />
     <Content Include="Views\Job\AddEditJob.cshtml" />
@@ -264,10 +273,11 @@
     <Content Include="Views\Reports\MonthlyReport.cshtml" />
     <Content Include="Views\Reports\BillingDetails.cshtml" />
     <Content Include="Views\Reports\PaymentTracker.cshtml" />
+    <Content Include="Views\Client\ClientDetails.cshtml" />
+    <Content Include="Views\Client\ClientAddEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

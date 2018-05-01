@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTrackerAdmin", "JobTrackerAdmin\JobTrackerAdmin.csproj", "{3619B721-67F5-4DBB-9BF0-3E2B7C52A6F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTrackerAdmin.DAL", "JobTrackerAdmin.DAL\JobTrackerAdmin.DAL.csproj", "{8B0C284C-5F78-4776-BF27-2432382C7B87}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{3619B721-67F5-4DBB-9BF0-3E2B7C52A6F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3619B721-67F5-4DBB-9BF0-3E2B7C52A6F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3619B721-67F5-4DBB-9BF0-3E2B7C52A6F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8B0C284C-5F78-4776-BF27-2432382C7B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B0C284C-5F78-4776-BF27-2432382C7B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B0C284C-5F78-4776-BF27-2432382C7B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B0C284C-5F78-4776-BF27-2432382C7B87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

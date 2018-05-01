@@ -1,0 +1,64 @@
+﻿@model IEnumerable<JobTrackerAdmin.Models.Client>
+
+@{
+    ViewBag.Title = "ClientDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ClientDetails</h2>
+
+<p>
+    @Html.ActionLink("Create New", "ClientAddEdit")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.clientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientContact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientPAN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientGST)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientRemarks)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientContact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientPAN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientGST)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientRemarks)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.clientId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.clientId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.clientId })
+        </td>
+    </tr>
+}
+
+</table>

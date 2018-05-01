@@ -29,6 +29,8 @@ D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\JobTrackerAdmin.dll
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\JobTrackerAdmin.pdb
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Antlr3.Runtime.dll
+D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\EntityFramework.dll
+D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\EntityFramework.SqlServer.dll
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.Agent.Intercept.dll
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.DependencyCollector.dll
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -36,6 +38,7 @@ D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.Web.dll
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.WindowsServer.dll
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.ApplicationInsights.dll
+D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AspNet.Identity.Core.dll
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.Web.Infrastructure.dll
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Newtonsoft.Json.dll
@@ -47,6 +50,9 @@ D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.WebPages.dll
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.WebPages.Razor.dll
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\WebGrease.dll
+D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\EntityFramework.xml
+D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\EntityFramework.SqlServer.xml
+D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AspNet.Identity.Core.xml
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.Helpers.xml
 D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.Mvc.xml
