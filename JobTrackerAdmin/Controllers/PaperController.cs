@@ -16,5 +16,10 @@ namespace JobTrackerAdmin.Controllers
             var data = pc.Papers.ToList();
             return View(data);
         }
+
+        public ActionResult PaperAddEdit()
+        {
+            return View();
+        }
     }
 }
