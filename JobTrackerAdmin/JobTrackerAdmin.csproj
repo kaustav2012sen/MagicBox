@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -152,6 +153,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Controllers\JobController.cs" />
+    <Compile Include="Controllers\PaperController.cs" />
     <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\SettingsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -159,6 +161,8 @@
     </Compile>
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\DataContext.cs" />
+    <Compile Include="Models\Paper.cs" />
+    <Compile Include="Models\PaperContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -275,6 +279,7 @@
     <Content Include="Views\Reports\PaymentTracker.cshtml" />
     <Content Include="Views\Client\ClientDetails.cshtml" />
     <Content Include="Views\Client\ClientAddEdit.cshtml" />
+    <Content Include="Views\Paper\PaperDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

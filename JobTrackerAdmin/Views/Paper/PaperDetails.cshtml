@@ -1,0 +1,46 @@
+﻿@model IEnumerable<JobTrackerAdmin.Models.Paper>
+
+@{
+    ViewBag.Title = "PaperDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>PaperDetails</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PaperType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientRemarks)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaperType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientRemarks)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PaperID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PaperID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PaperID })
+        </td>
+    </tr>
+}
+
+</table>
