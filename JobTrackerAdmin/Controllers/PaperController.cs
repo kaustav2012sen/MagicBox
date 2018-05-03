@@ -29,33 +29,30 @@ namespace JobTrackerAdmin.Controllers
             return View(data);
         }
 
+#Region AddEditPaper
         [HttpPost]
         public ActionResult PaperAddEdit(Paper collection)
         {
-            if(collection.PaperID==0)
-            {
-                List<object> lst = new List<object>();
+                       
+            List<object> lst = new List<object>(); //Bind All the Data with the model
 
-                //lst.Add(collection.PaperID);
-                lst.Add(collection.PaperType);
-                lst.Add(collection.Rate);
-                lst.Add(collection.clientRemarks);
-                object[] allitems = lst.ToArray();
-                int output = pc.Database.ExecuteSqlCommand("insert into Papers(PaperType,Rate,clientRemarks) values (@p0,@p1,@p2)", allitems);
+            lst.Add(collection.PaperID);
+            lst.Add(collection.PaperType);
+            lst.Add(collection.Rate);
+            lst.Add(collection.clientRemarks);
+            object[] allitems = lst.ToArray();
+            
+            if(collection.PaperID==0) // Add New Item
+            {
+                
+                int output = pc.Database.ExecuteSqlCommand("insert into Papers(PaperType,Rate,clientRemarks) values (@p1,@p2,@p3)", allitems);
                 if(output>0)
                 {
                     ViewBag.Itemmsg = "Paper Added Successfully";
                 }
             }
-            else
-            {
-                List<object> lst = new List<object>();
-
-                lst.Add(collection.PaperID);
-                lst.Add(collection.PaperType);
-                lst.Add(collection.Rate);
-                lst.Add(collection.clientRemarks);
-                object[] allitems = lst.ToArray();
+            else // Update existing
+            {               
                 int output = pc.Database.ExecuteSqlCommand("Update Papers set PaperType=@p1,Rate=@p2,clientRemarks=@p3 where Paperid=@p0", allitems);
                 if (output > 0)
                 {
@@ -69,5 +66,6 @@ namespace JobTrackerAdmin.Controllers
 
             
         }
+#EndRegion
     }
 }
