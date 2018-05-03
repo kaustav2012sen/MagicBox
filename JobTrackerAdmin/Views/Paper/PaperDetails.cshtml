@@ -10,7 +10,7 @@
     
 
     <p>
-        @Html.ActionLink("Create New", "PaperAddEdit")
+        @Html.ActionLink("Create New", "PaperAddEdit/0")
     </p>
     <div class="row">
         <div class="col-md-12">
@@ -52,7 +52,7 @@
                                     @Html.DisplayFor(modelItem => item.clientRemarks)
                                 </td>
                                 <td>
-                                    @Html.ActionLink("Edit", "Edit", new { id = item.PaperID }) |
+                                    @Html.ActionLink("Edit", "PaperAddEdit", new { id = item.PaperID }) |
                                     @Html.ActionLink("Details", "Details", new { id = item.PaperID }) |
                                     @Html.ActionLink("Delete", "Delete", new { id = item.PaperID })
                                 </td>
