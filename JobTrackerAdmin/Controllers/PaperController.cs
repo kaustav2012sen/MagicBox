@@ -22,14 +22,18 @@ namespace JobTrackerAdmin.Controllers
             return View();
         }
 
+        #region SearchPaper
+
         [HttpGet]
         public ActionResult PaperAddEdit(int id)
         {
             var data = pc.Papers.Find(id);
             return View(data);
         }
+        #endregion
 
-#Region AddEditPaper
+        #region PaperAddEdit 
+
         [HttpPost]
         public ActionResult PaperAddEdit(Paper collection)
         {
@@ -66,6 +70,6 @@ namespace JobTrackerAdmin.Controllers
 
             
         }
-#EndRegion
+#endregion
     }
 }

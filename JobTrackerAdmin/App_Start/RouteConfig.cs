@@ -16,7 +16,7 @@ namespace JobTrackerAdmin
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Client", action = "ClientDetails", id = UrlParameter.Optional }
+                defaults: new { controller = "Accounts", action = "Verification", id = UrlParameter.Optional }
             );
         }
     }

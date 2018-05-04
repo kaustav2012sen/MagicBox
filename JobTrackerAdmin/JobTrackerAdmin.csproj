@@ -151,6 +151,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Controllers\JobController.cs" />
     <Compile Include="Controllers\PaperController.cs" />
@@ -281,6 +282,9 @@
     <Content Include="Views\Client\ClientAddEdit.cshtml" />
     <Content Include="Views\Paper\PaperDetails.cshtml" />
     <Content Include="Views\Paper\PaperAddEdit.cshtml" />
+    <Content Include="Views\Shared\_LoginLayout.cshtml" />
+    <Content Include="Views\Accounts\Verification.cshtml" />
+    <Content Include="Views\Shared\navmenulogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
