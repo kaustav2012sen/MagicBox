@@ -164,6 +164,7 @@
     <Compile Include="Models\DataContext.cs" />
     <Compile Include="Models\Paper.cs" />
     <Compile Include="Models\PaperContext.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
