@@ -3,22 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using JobTrackerAdmin.Models;
 
 namespace JobTrackerAdmin.Controllers
 {
     public class AccountsController : Controller
     {
+        UserContext uc = new UserContext();
         // GET: Accounts
+        [HttpPost]
+        public ActionResult Verification(User usercollection)
+        {
+            var usr = uc.Users.Where(u => u.email == usercollection.email && u.password == usercollection.password).FirstOrDefault();
+            if(usr!=null)
+            {
+                Session["UserID"] = usr.UserID.ToString();
+                Session["UserName"] = usr.email.ToString();
+
+                return RedirectToAction("ClientDetails", "Client");
+            }
+            return RedirectToAction("ClientDetails", "Client");
+
+            //return View();
+        }
+
         [HttpGet]
         public ActionResult Verification()
         {
             return View();
-        }
-
-        [HttpPost]
-        public ActionResult Verification(int id)
-        {
-            return RedirectToAction("ClientDetails", "Client");
         }
     }
 }

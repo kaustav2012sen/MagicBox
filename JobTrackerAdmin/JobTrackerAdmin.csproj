@@ -165,6 +165,7 @@
     <Compile Include="Models\Paper.cs" />
     <Compile Include="Models\PaperContext.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -284,8 +285,9 @@
     <Content Include="Views\Paper\PaperDetails.cshtml" />
     <Content Include="Views\Paper\PaperAddEdit.cshtml" />
     <Content Include="Views\Shared\_LoginLayout.cshtml" />
-    <Content Include="Views\Accounts\Verification.cshtml" />
+    <Content Include="Views\Accounts\VerificationA.cshtml" />
     <Content Include="Views\Shared\navmenulogin.cshtml" />
+    <Content Include="Views\Accounts\Verification.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

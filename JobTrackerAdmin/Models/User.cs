@@ -9,6 +9,9 @@ namespace JobTrackerAdmin.Models
 {
     public class User
     {
+        [Key]
+        public int UserID { get; set; }
+
         [Required(ErrorMessage ="First Name mantatory")]
         [DisplayName("First Name")]
         public string firstName { get; set; }
@@ -19,6 +22,12 @@ namespace JobTrackerAdmin.Models
 
         [Required(ErrorMessage ="Email mandatory")]
         public string email { get; set; }
+
+        [Required(ErrorMessage ="Password mandatory")]
+        public string password { get; set; }
+
+        [Required(ErrorMessage ="Role")]
+        public int userRole { get; set; }
 
 
     }
