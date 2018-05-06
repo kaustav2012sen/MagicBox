@@ -21,9 +21,9 @@ namespace JobTrackerAdmin.Controllers
                 Session["UserName"] = usr.email.ToString();
                 Session["Role"] = usr.userRole.ToString();
 
-                return RedirectToAction("ClientDetails", "Client");
+                return RedirectToAction("PaperDetails", "Paper");
             }
-            return RedirectToAction("ClientDetails", "Client");
+            return RedirectToAction("MediaDetails", "Media");
 
             //return View();
         }
@@ -32,6 +32,7 @@ namespace JobTrackerAdmin.Controllers
         public ActionResult Verification()
         {
             Session["Role"] = "0";
+            Session["UserID"] = "";
             return View();
         }
     }
