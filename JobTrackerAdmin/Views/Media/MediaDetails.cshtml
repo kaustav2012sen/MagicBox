@@ -1,0 +1,69 @@
+﻿@model IEnumerable<JobTrackerAdmin.Models.Media>
+
+@{
+    ViewBag.Title = "MediaDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <h3 class="page-title">MediaDetails</h3>
+
+
+    <p>
+        @Html.ActionLink("Create New", "MediaAddEdit/0")
+    </p>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- TABLE STRIPED -->
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Striped Row</h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.MediaType)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Rate)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Remarks)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+            {
+                                <tr>
+                                    <td>
+
+                                        @Html.ActionLink(Html.DisplayFor(modelItem => item.MediaType).ToHtmlString(), "MediaAddEdit", new { id = item.MediaID }, new { dataval = item.MediaID })
+
+
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Rate)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Remarks)
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Edit", "MediaAddEdit", new { id = item.MediaID }) |
+                                        @Html.ActionLink("Details", "Details", new { id = item.MediaID }) |
+                                        @Html.ActionLink("Delete", "Delete", new { id = item.MediaID })
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- END TABLE STRIPED -->
+        </div>
+    </div>
+
+
