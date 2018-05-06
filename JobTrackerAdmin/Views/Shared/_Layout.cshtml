@@ -21,6 +21,17 @@
     <!-- ICONS -->
     <link rel="apple-touch-icon" sizes="76x76" href="~/Content/assets/img/apple-icon.png">
     <link rel="icon" type="image/png" sizes="96x96" href="~/Content/assets/img/favicon.png">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var Role = @Session["Role"];
+            if (Role == "1")
+            {
+                $('#dashboard').hide();
+            }
+        });
+    </script>
 </head>
 
 <body>
