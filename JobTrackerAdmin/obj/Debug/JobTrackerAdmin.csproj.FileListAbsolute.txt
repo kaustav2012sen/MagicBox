@@ -215,5 +215,9 @@ D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.Dep
 D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.WindowsServer.xml
 D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.Web.xml
+<<<<<<< HEAD
+=======
+D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.csprojResolveAssemblyReference.cache
+>>>>>>> Moumita-Branch
 D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.dll
 D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.pdb
