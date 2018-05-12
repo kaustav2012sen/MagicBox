@@ -1,0 +1,70 @@
+﻿@model IEnumerable<JobTrackerAdmin.Models.Vendor>
+
+@{
+    ViewBag.Title = "VendorDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>VendorDetails</h2>
+
+<p>
+    @Html.ActionLink("Create New", "VendorAddEdit/0")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.VendorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VendorAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VendorContact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VendorEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VendorPAN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VendorGST)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VendorRemarks)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.VendorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VendorAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VendorContact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VendorEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VendorPAN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VendorGST)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VendorRemarks)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "VendorAddEdit", new { id=item.VendorID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.VendorID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.VendorID })
+        </td>
+    </tr>
+}
+
+</table>

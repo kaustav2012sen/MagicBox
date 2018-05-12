@@ -1,0 +1,55 @@
+﻿@model JobTrackerAdmin.Models.Ink
+
+@{
+    ViewBag.Title = "InkAddEdit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>InkAddEdit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Ink</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.InkID)
+    <div class="form-group">
+        @Html.LabelFor(model => model.InkType, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.InkType, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.InkType, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.InkRemarks, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.InkRemarks, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.InkRemarks, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "InkDetails")
+</div>
+<!-- To show message that Product is Inserted/Updated successfully-->
+<div>
+    @{
+
+        if (ViewBag.Itemmsg != null)
+        {
+            <span style="color:green; font-weight:bold">@ViewBag.Itemmsg</span>
+        }
+    }
+</div>
