@@ -153,6 +153,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\ClientController.cs" />
+    <Compile Include="Controllers\DigitalController.cs" />
     <Compile Include="Controllers\JobController.cs" />
     <Compile Include="Controllers\MediaController.cs" />
     <Compile Include="Controllers\PaperController.cs" />
@@ -163,6 +164,8 @@
     </Compile>
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\DataContext.cs" />
+    <Compile Include="Models\Digital.cs" />
+    <Compile Include="Models\DigitalContext.cs" />
     <Compile Include="Models\Media.cs" />
     <Compile Include="Models\MediaContext.cs" />
     <Compile Include="Models\Paper.cs" />
@@ -296,6 +299,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Digital\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
