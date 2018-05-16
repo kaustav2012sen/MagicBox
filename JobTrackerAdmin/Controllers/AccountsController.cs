@@ -15,7 +15,7 @@ namespace JobTrackerAdmin.Controllers
         public ActionResult Verification(User usercollection)
         {
             var usr = uc.Users.Where(u => u.email == usercollection.email && u.password == usercollection.password).FirstOrDefault();
-            if(usr!=null)
+            if (usr != null)
             {
                 Session["UserID"] = usr.UserID.ToString();
                 Session["UserName"] = usr.email.ToString();
