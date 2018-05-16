@@ -7,32 +7,34 @@
 
 
 <div class="row">
-    <div class="col-lg-8">
+    <div class="col-lg-10">
         <div class="panel">
             <div class="panel-heading">
                 <h2 class="panel-title">Client Details</h2>
                 <p>
-                    @Html.ActionLink("Create New", "ClientAddEdit")
+                    @Html.ActionLink("Add New Client", "ClientAddEdit/0",null, new { @class = "btn btn-success" })
+                    
                 </p>
             </div>
             <div class="panel-body">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th>SlNo.</th>
                             <th>@Html.DisplayNameFor(model => model.clientName)</th>
                             <th>@Html.DisplayNameFor(model => model.clientAddress)</th>
                             <th>@Html.DisplayNameFor(model => model.clientContact)</th>
                             <th>@Html.DisplayNameFor(model => model.clientPAN)</th>
                             <th>@Html.DisplayNameFor(model => model.clientGST)</th>
                             <th>@Html.DisplayNameFor(model => model.clientRemarks)</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach (var item in Model)
                         {
                         <tr>
-                            <td>1</td>
+                            <td>@Html.DisplayFor(modelItem=>item.clientId)</td>
                             <td>@Html.DisplayFor(modelItem => item.clientName)</td>
                             <td>@Html.DisplayFor(modelItem => item.clientAddress)</td>
                             <td>@Html.DisplayFor(modelItem => item.clientContact)</td>
@@ -40,7 +42,7 @@
                             <td>@Html.DisplayFor(modelItem => item.clientGST)</td>
                             <td>@Html.DisplayFor(modelItem => item.clientRemarks)</td>
                             <td>
-                                @Html.ActionLink("Edit", "Edit", new { id = item.clientId }) |
+                                @Html.ActionLink("Edit", "ClientAddEdit", new { id = item.clientId }) |
                                 @Html.ActionLink("Details", "Details", new { id = item.clientId }) |
                                 @Html.ActionLink("Delete", "Delete", new { id = item.clientId })
                             </td>

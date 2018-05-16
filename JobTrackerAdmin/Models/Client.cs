@@ -21,7 +21,7 @@ namespace JobTrackerAdmin.Models
 
         [Required(ErrorMessage ="Contact Number Mandatory")]
         [DisplayName("Client Contact")]
-        public int clientContact { get; set; }
+        public double clientContact { get; set; }
 
         [DisplayName("Client PAN")]
         public string clientPAN { get; set; }

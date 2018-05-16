@@ -21,5 +21,53 @@ namespace JobTrackerAdmin.Controllers
         {
             return View();
         }
+
+
+        #region ClientSearch
+
+        [HttpGet]
+        public ActionResult ClientAddEdit(int id)
+        {
+            var data = db.Clients.Find(id);
+            return View(data);
+        }
+        #endregion
+
+
+        #region ClientAddEdit
+        [HttpPost]
+        public ActionResult ClientAddEdit(Client collection)
+        {
+            List<object> list = new List<object>();
+
+            list.Add(collection.clientId);
+            list.Add(collection.clientName);
+            list.Add(collection.clientAddress);
+            list.Add(collection.clientContact);
+            list.Add(collection.clientRemarks);
+            object[] allItems = list.ToArray();
+
+            if (collection.clientId == 0)
+            {
+                int output = db.Database.ExecuteSqlCommand("insert into Clients(clientName,clientAddress,clientContact,clientRemarks) values (@p1, @p2, @p3,@p4)", allItems);
+                if (output > 0)
+                {
+                    ViewBag.Itemmsg = "Media Added Successfully!!";
+                }
+            }
+            else
+            {
+
+                int output = db.Database.ExecuteSqlCommand("update Clients set clientName=@p1, clientAddress=@p2, clientContact=@p3,clientRemarks=@p4 where clientID=@p0", allItems);
+                if (output > 0)
+                {
+                    ViewBag.Itemmsg = "Media Updated Successfully!!";
+                }
+            }
+
+            return View();
+        }
+        #endregion
+
     }
 }
