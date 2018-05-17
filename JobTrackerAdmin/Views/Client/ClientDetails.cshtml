@@ -10,18 +10,14 @@
     <div class="col-lg-10">
         <div class="panel">
             <div class="panel-heading">
-                <h2 class="panel-title">Client Details</h2>
-               
-                 
-
-              
+                <h2 class="panel-title">Client Details</h2>            
             </div>
             
             <div class="panel-body">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>SlNo.</th>
+                            <th>Sl No.</th>
                             <th>@Html.DisplayNameFor(model => model.clientName)</th>
                             <th>@Html.DisplayNameFor(model => model.clientAddress)</th>
                             <th>@Html.DisplayNameFor(model => model.clientContact)</th>
@@ -33,7 +29,7 @@
                     </thead>
                     <tbody>
                         @foreach (var item in Model)
-                {
+                        {
                     <tr>
                         <td>@Html.DisplayFor(modelItem => item.clientId)</td>
                         <td>@Html.DisplayFor(modelItem => item.clientName)</td>
@@ -48,10 +44,8 @@
                             @Html.ActionLink("Delete", "Delete", new { id = item.clientId })
                         </td>
                     </tr>
-        }
-
-
-                    </tbody>
+}
+                 </tbody>
                 </table>
 
                 <hr />
