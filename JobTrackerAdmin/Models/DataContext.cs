@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
-using JobTrackerAdmin.Migrations;
+
 
 namespace JobTrackerAdmin.Models
 {
@@ -11,7 +11,8 @@ namespace JobTrackerAdmin.Models
     {
         public DataContext():base("connect")
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<DataContext,Configuration>());
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<DataContext>());
+
         }
         public DbSet<Client> Clients { get; set; }
     }

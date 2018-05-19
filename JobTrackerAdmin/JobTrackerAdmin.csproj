@@ -158,14 +158,10 @@
     <Compile Include="Controllers\PaperController.cs" />
     <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\SettingsController.cs" />
+    <Compile Include="Controllers\VendorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804291631035_InitialCreate.cs" />
-    <Compile Include="Migrations\201804291631035_InitialCreate.Designer.cs">
-      <DependentUpon>201804291631035_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\DataContext.cs" />
     <Compile Include="Models\Media.cs" />
@@ -174,6 +170,8 @@
     <Compile Include="Models\PaperContext.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserContext.cs" />
+    <Compile Include="Models\Vendor.cs" />
+    <Compile Include="Models\VendorContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -298,6 +296,8 @@
     <Content Include="Views\Accounts\Verification.cshtml" />
     <Content Include="Views\Media\MediaDetails.cshtml" />
     <Content Include="Views\Media\MediaAddEdit.cshtml" />
+    <Content Include="Views\Vendor\VendorAddEdit.cshtml" />
+    <Content Include="Views\Vendor\VendorDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -317,11 +317,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201804291631035_InitialCreate.resx">
-      <DependentUpon>201804291631035_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

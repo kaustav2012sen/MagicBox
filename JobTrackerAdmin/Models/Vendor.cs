@@ -21,7 +21,7 @@ namespace JobTrackerAdmin.Models
 
         [Required(ErrorMessage = "Contact Number Mandatory")]
         [DisplayName("Vendor Contact")]
-        public int VendorContact { get; set; }
+        public double VendorContact { get; set; }
 
         [DisplayName("Vendor Email")]
         public string VendorEmail { get; set; }

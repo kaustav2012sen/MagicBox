@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace JobTrackerAdmin.Models
     {
         public VendorContext() : base("connect")
         {
+            Database.SetInitializer(new DropCreateDatabaseAlways<VendorContext>());
 
         }
 

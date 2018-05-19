@@ -1,60 +1,103 @@
-﻿@model JobTrackerAdmin.Models.Client
+﻿<style>
+    .btn-warning {
+        background-color: #c5b00a;
+        border-color: #d6be0f;
+        color: firebrick;
+    }
+    .panel .panel-heading .panel-title {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 800;
+    }
+</style>
+@model JobTrackerAdmin.Models.Client
 
 @{
     ViewBag.Title = "ClientAddEdit";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@section PageScripts{
+    <script type="text/javascript">
+            $(document).ready(function () {
+
+
+                if (document.getElementById('ClientID').value=="")
+                {
+                    document.getElementById('btn_save').value = 'CREATE';
+                    
+
+                }
+                else {
+                    document.getElementById('btn_save').value = 'UPDATE';
+                    
+                }
+
+
+        });
+
+    </script>
+}
+
 <div class="row">
-    <div class="col-lg-7">
+    <div class="col-lg-12">
 <div class="panel">
 
     <div class="panel-heading">
+        
+        
         <h2 class="panel-title">Add Client Details</h2>
     </div>
 
-
+   
 
     @using (Html.BeginForm())
     {
         @Html.AntiForgeryToken()
     <div class="panel-body">
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model => model.clientId)
+        @Html.HiddenFor(model => model.clientId, new { id = "ClientID" })
         @Html.LabelFor(model => model.clientName, htmlAttributes: new { @class = "control-label col-md-2" })
         @Html.EditorFor(model => model.clientName, new { htmlAttributes = new { @class = "form-control" } })
         @Html.ValidationMessageFor(model => model.clientName, "", new { @class = "text-danger" })
-              
+
         @Html.LabelFor(model => model.clientAddress, htmlAttributes: new { @class = "control-label col-md-2" })
         @Html.EditorFor(model => model.clientAddress, new { htmlAttributes = new { @class = "form-control" } })
         @Html.ValidationMessageFor(model => model.clientAddress, "", new { @class = "text-danger" })
-           
+
         @Html.LabelFor(model => model.clientContact, htmlAttributes: new { @class = "control-label col-md-2" })
         @Html.EditorFor(model => model.clientContact, new { htmlAttributes = new { @class = "form-control" } })
         @Html.ValidationMessageFor(model => model.clientContact, "", new { @class = "text-danger" })
-        
+
         @Html.LabelFor(model => model.clientPAN, htmlAttributes: new { @class = "control-label col-md-2" })
         @Html.EditorFor(model => model.clientPAN, new { htmlAttributes = new { @class = "form-control" } })
         @Html.ValidationMessageFor(model => model.clientPAN, "", new { @class = "text-danger" })
-        
+
         @Html.LabelFor(model => model.clientGST, htmlAttributes: new { @class = "control-label col-md-2" })
         @Html.EditorFor(model => model.clientGST, new { htmlAttributes = new { @class = "form-control" } })
         @Html.ValidationMessageFor(model => model.clientGST, "", new { @class = "text-danger" })
-        
+
         @Html.LabelFor(model => model.clientRemarks, htmlAttributes: new { @class = "control-label col-md-2" })
         @Html.EditorFor(model => model.clientRemarks, new { htmlAttributes = new { @class = "form-control" } })
         @Html.ValidationMessageFor(model => model.clientRemarks, "", new { @class = "text-danger" })
         <hr />
-        <p><input type="submit" value="Create" class="btn btn btn-success" /></p>
-        
-           
-       
+        <p>
+            <input type="submit" value="Create" id="btn_save" class="btn btn btn-success" />
+            @Html.ActionLink("BACK", "ClientDetails", null, new { @class = "btn btn btn-warning" })
+        </p>
+
+
+
+
+
+
+
     </div>
             }
-      
+
     </div>
 </div>
     </div>
 
     <div>
-        @Html.ActionLink("Back to List", "ClientDetails")
     </div>
