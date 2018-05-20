@@ -41,9 +41,10 @@
                                 <td>@Html.DisplayFor(modelItem => item.VendorGST)</td>
                                 <td>@Html.DisplayFor(modelItem => item.VendorRemarks)</td>
                                 <td>
-                                    @Html.ActionLink("Edit", "VendorAddEdit", new { id = item.VendorID }) |
-                                    @Html.ActionLink("Details", "Details", new { id = item.VendorID }) |
-                                    @Html.ActionLink("Delete", "Delete", new { id = item.VendorID })
+                                    <a href="@Url.Action("VendorAddEdit", "Vendor", new { id = item.VendorID })"><img src="~/Content/assets/img/icon/Edit20X20.png" /></a>
+                                    @*@Html("Edit", "VendorAddEdit", new { id = item.VendorID })*@ |
+                                    <a href="#"><img src="~/Content/assets/img/icon/Del20X20.png" /></a>
+                                    @*@Html.ActionLink("Delete", "Delete", new { id = item.VendorID })*@
                                 </td>
                             </tr>
                         }
