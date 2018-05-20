@@ -5,66 +5,57 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>VendorDetails</h2>
 
-<p>
-    @Html.ActionLink("Create New", "VendorAddEdit/0")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.VendorName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VendorAddress)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VendorContact)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VendorEmail)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VendorPAN)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VendorGST)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VendorRemarks)
-        </th>
-        <th></th>
-    </tr>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel">
+            <div class="panel-heading">
+                <h2 class="panel-title">Vendor Information</h2>
+            </div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.VendorName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VendorAddress)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VendorContact)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VendorEmail)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VendorPAN)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VendorGST)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VendorRemarks)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "VendorAddEdit", new { id=item.VendorID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.VendorID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.VendorID })
-        </td>
-    </tr>
-}
+            <div class="panel-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
 
-</table>
+                            <th>@Html.DisplayNameFor(model => model.VendorName)</th>
+                            <th>@Html.DisplayNameFor(model => model.VendorAddress)</th>
+                            <th>@Html.DisplayNameFor(model => model.VendorContact)</th>
+                            <th>@Html.DisplayNameFor(model => model.VendorEmail)</th>
+                            <th>@Html.DisplayNameFor(model => model.VendorPAN)</th>
+                            <th>@Html.DisplayNameFor(model => model.VendorGST)</th>
+                            <th>@Html.DisplayNameFor(model => model.VendorRemarks)</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.ActionLink(Html.DisplayFor(modelItem => item.VendorName).ToHtmlString(), "VendorAddEdit", new { id = item.VendorID }, new { dataval = item.VendorID })</td>
+                                
+                                <td>@Html.DisplayFor(modelItem => item.VendorAddress)</td>
+                                <td>@Html.DisplayFor(modelItem => item.VendorContact)</td>
+                                <td>@Html.DisplayFor(modelItem => item.VendorEmail)</td>
+                                <td>@Html.DisplayFor(modelItem => item.VendorPAN)</td>
+                                <td>@Html.DisplayFor(modelItem => item.VendorGST)</td>
+                                <td>@Html.DisplayFor(modelItem => item.VendorRemarks)</td>
+                                <td>
+                                    @Html.ActionLink("Edit", "VendorAddEdit", new { id = item.VendorID }) |
+                                    @Html.ActionLink("Details", "Details", new { id = item.VendorID }) |
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.VendorID })
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+                <hr />
+                <p>@Html.ActionLink("Create New", "VendorAddEdit/0", null, new { @class = "btn btn-success" })
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

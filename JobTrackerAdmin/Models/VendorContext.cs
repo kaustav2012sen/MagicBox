@@ -11,7 +11,7 @@ namespace JobTrackerAdmin.Models
     {
         public VendorContext() : base("connect")
         {
-            Database.SetInitializer(new DropCreateDatabaseAlways<VendorContext>());
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<VendorContext>());
 
         }
 
