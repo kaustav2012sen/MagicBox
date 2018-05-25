@@ -41,13 +41,13 @@ namespace JobTrackerAdmin.Controllers
 
             list.Add(collection.MediaID);
             list.Add(collection.MediaType);
-            list.Add(collection.Rate);
+            
             list.Add(collection.Remarks);
             object[] allItems = list.ToArray();
 
             if(collection.MediaID==0)
             {
-                int output = mc.Database.ExecuteSqlCommand("insert into Media(MediaType,Rate,Remarks) values (@p1, @p2, @p3)", allItems);
+                int output = mc.Database.ExecuteSqlCommand("insert into Media(MediaType,Remarks) values (@p1, @p2)", allItems);
                 if(output>0)
                 {
                     ViewBag.Itemmsg = "Media Added Successfully!!";
@@ -56,7 +56,7 @@ namespace JobTrackerAdmin.Controllers
             else
             {
 
-                int output = mc.Database.ExecuteSqlCommand("update Media set MediaType=@p1, Rate=@p2, Remarks=@p3 where MediaID=@p0", allItems);
+                int output = mc.Database.ExecuteSqlCommand("update Media set MediaType=@p1,  Remarks=@p2 where MediaID=@p0", allItems);
                 if(output>0)
                 {
                     ViewBag.Itemmsg = "Media Updated Successfully!!";

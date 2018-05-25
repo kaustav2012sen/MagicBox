@@ -10,6 +10,7 @@ namespace JobTrackerAdmin.Models
     {
         public PaperContext() : base("connect")
         {
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<PaperContext>());
 
         }
 

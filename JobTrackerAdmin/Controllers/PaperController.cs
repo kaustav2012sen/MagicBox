@@ -42,14 +42,14 @@ namespace JobTrackerAdmin.Controllers
 
             lst.Add(collection.PaperID);
             lst.Add(collection.PaperType);
-            lst.Add(collection.Rate);
-            lst.Add(collection.clientRemarks);
+            
+            lst.Add(collection.PaperRemarks);
             object[] allitems = lst.ToArray();
             
             if(collection.PaperID==0) // Add New Item
             {
                 
-                int output = pc.Database.ExecuteSqlCommand("insert into Papers(PaperType,Rate,clientRemarks) values (@p1,@p2,@p3)", allitems);
+                int output = pc.Database.ExecuteSqlCommand("insert into Papers(PaperType,PaperRemarks) values (@p1,@p2)", allitems);
                 if(output>0)
                 {
                     ViewBag.Itemmsg = "Paper Added Successfully";
@@ -57,7 +57,7 @@ namespace JobTrackerAdmin.Controllers
             }
             else // Update existing
             {               
-                int output = pc.Database.ExecuteSqlCommand("Update Papers set PaperType=@p1,Rate=@p2,clientRemarks=@p3 where Paperid=@p0", allitems);
+                int output = pc.Database.ExecuteSqlCommand("Update Papers set PaperType=@p1,PaperRemarks=@p2 where Paperid=@p0", allitems);
                 if (output > 0)
                 {
                     ViewBag.Itemmsg = "Paper Updated Successfully";

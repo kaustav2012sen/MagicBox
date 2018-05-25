@@ -10,6 +10,7 @@ namespace JobTrackerAdmin.Models
     {
         public MediaContext() : base("connect")
         {
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<MediaContext>());
 
         }
 

@@ -1,149 +1,75 @@
-<<<<<<< HEAD
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\ApplicationInsights.config
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\csc.exe
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\csc.exe.config
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\csc.rsp
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\csi.exe
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\csi.rsp
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\System.AppContext.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\System.Collections.Immutable.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\System.IO.FileSystem.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\System.Reflection.Metadata.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\vbc.exe
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\vbc.exe.config
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\vbc.rsp
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\VBCSCompiler.exe
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\roslyn\VBCSCompiler.exe.config
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\JobTrackerAdmin.dll.config
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\JobTrackerAdmin.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\JobTrackerAdmin.pdb
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Antlr3.Runtime.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\EntityFramework.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\EntityFramework.SqlServer.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.Agent.Intercept.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.DependencyCollector.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.PerfCounterCollector.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.ServerTelemetryChannel.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.Web.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.WindowsServer.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.ApplicationInsights.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AspNet.Identity.Core.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.Web.Infrastructure.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Newtonsoft.Json.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.Helpers.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.Mvc.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.Optimization.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.Razor.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.WebPages.Deployment.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.WebPages.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.WebPages.Razor.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\WebGrease.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\EntityFramework.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\EntityFramework.SqlServer.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AspNet.Identity.Core.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.Helpers.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.Mvc.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.Optimization.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.Razor.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.WebPages.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.WebPages.Deployment.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\System.Web.WebPages.Razor.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Antlr3.Runtime.pdb
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Newtonsoft.Json.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.ApplicationInsights.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.DependencyCollector.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.ServerTelemetryChannel.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.WindowsServer.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.Web.xml
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.csprojResolveAssemblyReference.cache
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.dll
-D:\Kalpataru & Band Real\Magic Box\MagicBox\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.pdb
-=======
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\ApplicationInsights.config
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\csc.exe
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\csc.exe.config
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\csc.rsp
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\csi.exe
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\csi.rsp
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\System.AppContext.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\System.Collections.Immutable.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\System.IO.FileSystem.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\System.Reflection.Metadata.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\vbc.exe
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\vbc.exe.config
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\vbc.rsp
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\VBCSCompiler.exe
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\roslyn\VBCSCompiler.exe.config
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\JobTrackerAdmin.dll.config
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\JobTrackerAdmin.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\JobTrackerAdmin.pdb
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Antlr3.Runtime.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\EntityFramework.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\EntityFramework.SqlServer.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.Agent.Intercept.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.DependencyCollector.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.PerfCounterCollector.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.ServerTelemetryChannel.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.Web.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.WindowsServer.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.ApplicationInsights.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AspNet.Identity.Core.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.Web.Infrastructure.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Newtonsoft.Json.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.Helpers.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.Mvc.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.Optimization.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.Razor.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.WebPages.Deployment.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.WebPages.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.WebPages.Razor.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\WebGrease.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\EntityFramework.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\EntityFramework.SqlServer.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AspNet.Identity.Core.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.Helpers.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.Mvc.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.Optimization.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.Razor.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.WebPages.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.WebPages.Deployment.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\System.Web.WebPages.Razor.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Antlr3.Runtime.pdb
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Newtonsoft.Json.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.ApplicationInsights.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.DependencyCollector.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.ServerTelemetryChannel.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.WindowsServer.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\bin\Microsoft.AI.Web.xml
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.dll
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.pdb
-D:\Business Directory\Web Projects\Magic box\JobTrackerAdmin\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.csprojResolveAssemblyReference.cache
->>>>>>> 2ee71c7651947e766bb735216e5d19956bf091f2
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\ApplicationInsights.config
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\csc.exe
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\csc.exe.config
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\csc.rsp
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\csi.exe
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\csi.rsp
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\System.AppContext.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\System.Collections.Immutable.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\System.IO.FileSystem.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\System.Reflection.Metadata.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\vbc.exe
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\vbc.exe.config
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\vbc.rsp
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\VBCSCompiler.exe
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\roslyn\VBCSCompiler.exe.config
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\JobTrackerAdmin.dll.config
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\JobTrackerAdmin.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\JobTrackerAdmin.pdb
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Antlr3.Runtime.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\EntityFramework.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\EntityFramework.SqlServer.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.Agent.Intercept.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.DependencyCollector.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.Web.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.WindowsServer.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.ApplicationInsights.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.AspNet.Identity.Core.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.Web.Infrastructure.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Newtonsoft.Json.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.Helpers.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.Mvc.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.Optimization.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.Razor.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.WebPages.Deployment.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.WebPages.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.WebPages.Razor.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\WebGrease.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\EntityFramework.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\EntityFramework.SqlServer.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.AspNet.Identity.Core.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.Helpers.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.Mvc.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.Optimization.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.Razor.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.WebPages.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.WebPages.Deployment.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\System.Web.WebPages.Razor.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Antlr3.Runtime.pdb
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Newtonsoft.Json.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.ApplicationInsights.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.DependencyCollector.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.WindowsServer.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\bin\Microsoft.AI.Web.xml
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.csproj.CoreCompileInputs.cache
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.csproj.CopyComplete
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.dll
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.pdb
+F:\the magic box\production tracker\wip\MagicBox\JobTrackerAdmin\obj\Debug\JobTrackerAdmin.csprojResolveAssemblyReference.cache

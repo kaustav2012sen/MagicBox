@@ -26,11 +26,9 @@
                                 <th>
                                     @Html.DisplayNameFor(model => model.PaperType)
                                 </th>
+                               
                                 <th>
-                                    @Html.DisplayNameFor(model => model.Rate)
-                                </th>
-                                <th>
-                                    @Html.DisplayNameFor(model => model.clientRemarks)
+                                    @Html.DisplayNameFor(model => model.PaperRemarks)
                                 </th>
                                 <th></th>
                             </tr>
@@ -45,11 +43,9 @@
 
 
                                 </td>
+                                
                                 <td>
-                                    @Html.DisplayFor(modelItem => item.Rate)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.clientRemarks)
+                                    @Html.DisplayFor(modelItem => item.PaperRemarks)
                                 </td>
                                 <td>
                                     @Html.ActionLink("Edit", "PaperAddEdit", new { id = item.PaperID }) |

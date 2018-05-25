@@ -17,14 +17,11 @@
             
         @Html.EditorFor(model => model.PaperType, new { htmlAttributes = new { @class = "form-control" } })
         @Html.ValidationMessageFor(model => model.PaperType, "", new { @class = "text-danger" })
-        @Html.LabelFor(model => model.Rate, htmlAttributes: new { @class = "control-label col-md-2" })
-        
-        @Html.EditorFor(model => model.Rate, new { htmlAttributes = new { @class = "form-control" } })
-        @Html.ValidationMessageFor(model => model.Rate, "", new { @class = "text-danger" })
-        @Html.LabelFor(model => model.clientRemarks, htmlAttributes: new { @class = "control-label col-md-2" })
+
+        @Html.LabelFor(model => model.PaperRemarks, htmlAttributes: new { @class = "control-label col-md-2" })
          
-        @Html.EditorFor(model => model.clientRemarks, new { htmlAttributes = new { @class = "form-control" } })
-        @Html.ValidationMessageFor(model => model.clientRemarks, "", new { @class = "text-danger" })
+        @Html.EditorFor(model => model.PaperRemarks, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.PaperRemarks, "", new { @class = "text-danger" })
           
        <input type="submit" value="Create" class="btn btn-default" />
      

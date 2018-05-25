@@ -16,11 +16,9 @@ namespace JobTrackerAdmin.Models
         [DisplayName("Paper Type")]
         public string PaperType { get; set; }
 
-        [DisplayName("Rate")]
-        public int Rate { get; set; }
-
+        
         [DisplayName("Additional Remarks")]
-        public string clientRemarks { get; set; }
+        public string PaperRemarks { get; set; }
 
     }
 }

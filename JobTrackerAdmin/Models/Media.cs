@@ -16,8 +16,7 @@ namespace JobTrackerAdmin.Models
         [DisplayName("Media Type")]
         public string MediaType { get; set; }
 
-        [DisplayName("Rate")]
-        public float Rate { get; set; }
+       
 
         [DisplayName("Remarks")]
         public string Remarks { get; set; }
