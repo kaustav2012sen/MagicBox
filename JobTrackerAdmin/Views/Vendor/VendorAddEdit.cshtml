@@ -1,87 +1,97 @@
-﻿@model JobTrackerAdmin.Models.Vendor
+﻿<style>
+    .btn-warning {
+        background-color: #c5b00a;
+        border-color: #d6be0f;
+        color: firebrick;
+    }
+
+    .panel .panel-heading .panel-title {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 800;
+    }
+</style>
+
+
+@model JobTrackerAdmin.Models.Vendor
 
 @{
     ViewBag.Title = "VendorAddEdit";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>VendorAddEdit</h2>
-
-@using (Html.BeginForm()) 
-{
-    @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>Vendor</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model => model.VendorID)
+@section PageScripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
 
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.VendorName, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.VendorName, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.VendorName, "", new { @class = "text-danger" })
-            </div>
-        </div>
+            if (document.getElementById('VendorID').value == "") {
+                document.getElementById('btn_save').value = 'CREATE';
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.VendorAddress, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.VendorAddress, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.VendorAddress, "", new { @class = "text-danger" })
-            </div>
-        </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.VendorContact, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.VendorContact, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.VendorContact, "", new { @class = "text-danger" })
-            </div>
-        </div>
+            }
+            else {
+                document.getElementById('btn_save').value = 'UPDATE';
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.VendorEmail, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.VendorEmail, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.VendorEmail, "", new { @class = "text-danger" })
-            </div>
-        </div>
+            }
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.VendorPAN, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.VendorPAN, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.VendorPAN, "", new { @class = "text-danger" })
-            </div>
-        </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.VendorGST, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.VendorGST, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.VendorGST, "", new { @class = "text-danger" })
-            </div>
-        </div>
+        });
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.VendorRemarks, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.VendorRemarks, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.VendorRemarks, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </div>
-    </div>
+    </script>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel">
+
+            <div class="panel-heading">
+                <h2 class="panel-title">Add Client Details</h2>
+            </div>
+
+
+
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                <div class="panel-body">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.VendorID)
+                    @Html.LabelFor(model => model.VendorName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.VendorName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.VendorName, "", new { @class = "text-danger" })
+                    @Html.LabelFor(model => model.VendorAddress, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.VendorAddress, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.VendorAddress, "", new { @class = "text-danger" })
+                    @Html.LabelFor(model => model.VendorContact, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.VendorContact, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.VendorContact, "", new { @class = "text-danger" })
+                    @Html.LabelFor(model => model.VendorEmail, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.VendorEmail, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.VendorEmail, "", new { @class = "text-danger" })
+                    @Html.LabelFor(model => model.VendorPAN, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.VendorPAN, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.VendorPAN, "", new { @class = "text-danger" })
+                    @Html.LabelFor(model => model.VendorGST, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.VendorGST, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.VendorGST, "", new { @class = "text-danger" })
+                    @Html.LabelFor(model => model.VendorRemarks, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.VendorRemarks, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.VendorRemarks, "", new { @class = "text-danger" })
+                    <hr />
+                    <p>
+                        <input type="submit" value="Create" id="btn_save" class="btn btn btn-success" />
+                        @Html.ActionLink("BACK", "VendorDetails", null, new { @class = "btn btn btn-warning" })
+                    </p>
+
+                </div>
+            }
+
+        </div>
+    </div>
 </div>
+
+
+
+

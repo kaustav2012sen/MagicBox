@@ -25,7 +25,7 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Sl No.</th>
+                            
                             <th>@Html.DisplayNameFor(model => model.VendorName)</th>
                             <th>@Html.DisplayNameFor(model => model.VendorAddress)</th>
                             <th>@Html.DisplayNameFor(model => model.VendorContact)</th>
@@ -40,6 +40,7 @@
                         @foreach (var item in Model)
                         {
                             <tr>
+                                
                                 <td>@Html.ActionLink(Html.DisplayFor(modelItem => item.VendorName).ToHtmlString(), "VendorAddEdit", new { id = item.VendorID }, new { dataval = item.VendorID })</td>
                                 <td>@Html.DisplayFor(modelItem => item.VendorAddress)</td>
                                 <td>@Html.DisplayFor(modelItem => item.VendorContact)</td>
