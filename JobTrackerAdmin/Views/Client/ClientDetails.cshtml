@@ -36,11 +36,14 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @{
+                            int counter = 0;
+                        }
                         @foreach (var item in Model)
                         {
                     <tr>
-                        <td>@Html.DisplayFor(modelItem => item.clientId)</td>
-                        
+                        @*<td>@Html.DisplayFor(modelItem => item.clientId)</td>*@
+                        <td>@(++counter)</td>
                         <td>@Html.ActionLink(Html.DisplayFor(modelItem => item.clientName).ToHtmlString(), "ClientAddEdit", new { id = item.clientId }, new { dataval = item.clientId })</td>
                         <td>@Html.DisplayFor(modelItem => item.clientAddress)</td>
                         <td>@Html.DisplayFor(modelItem => item.clientContact)</td>

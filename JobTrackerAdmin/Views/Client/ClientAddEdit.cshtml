@@ -25,7 +25,6 @@
                 if (document.getElementById('ClientID').value=="")
                 {
                     document.getElementById('btn_save').value = 'CREATE';
-                    
 
                 }
                 else {
@@ -84,6 +83,7 @@
         <p>
             <input type="submit" value="Create" id="btn_save" class="btn btn btn-success" />
             @Html.ActionLink("BACK", "ClientDetails", null, new { @class = "btn btn btn-warning" })
+            @*@Html.ActionLink("CREATE", "ClientDetails", null, new { @class = "btn btn btn-warning" })*@
         </p>
             </div>
             }

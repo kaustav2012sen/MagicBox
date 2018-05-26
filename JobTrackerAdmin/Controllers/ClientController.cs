@@ -62,8 +62,11 @@ namespace JobTrackerAdmin.Controllers
                 if (output > 0)
                 {
                     ViewBag.Itemmsg = "Media Updated Successfully!!";
+
                 }
             }
+            return RedirectToAction("ClientDetails", "Client");
+
 
             return View();
         }

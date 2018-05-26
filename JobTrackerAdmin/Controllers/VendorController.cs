@@ -57,12 +57,14 @@ namespace JobTrackerAdmin.Controllers
             }
             else // Update existing
             {
-                int output = db.Database.ExecuteSqlCommand("Update Vendors set VendorName=@p1,VendorContact=@p2,VendorAddress=@p3,VendorEmail=@p4,VendorPAN=@p5,VendorGST=@p6,VendorRemarks=@p7 where Paperid=@p0", allitems);
+                int output = db.Database.ExecuteSqlCommand("Update Vendors set VendorName=@p1,VendorContact=@p2,VendorAddress=@p3,VendorEmail=@p4,VendorPAN=@p5,VendorGST=@p6,VendorRemarks=@p7 where VendorID=@p0", allitems);
                 if (output > 0)
                 {
                     ViewBag.Itemmsg = "Vendor Updated Successfully";
                 }
             }
+            return RedirectToAction("VendorDetails", "Vendor");
+
 
 
 

@@ -25,7 +25,7 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            
+                            <td>Sl No.</td>
                             <th>@Html.DisplayNameFor(model => model.VendorName)</th>
                             <th>@Html.DisplayNameFor(model => model.VendorAddress)</th>
                             <th>@Html.DisplayNameFor(model => model.VendorContact)</th>
@@ -37,10 +37,14 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @{
+                            int counter = 0;
+                        }
                         @foreach (var item in Model)
                         {
                             <tr>
-                                
+                                @*<td>counter++</td>*@
+                                <td>@(++counter)</td>
                                 <td>@Html.ActionLink(Html.DisplayFor(modelItem => item.VendorName).ToHtmlString(), "VendorAddEdit", new { id = item.VendorID }, new { dataval = item.VendorID })</td>
                                 <td>@Html.DisplayFor(modelItem => item.VendorAddress)</td>
                                 <td>@Html.DisplayFor(modelItem => item.VendorContact)</td>
@@ -50,10 +54,8 @@
                                 <td>@Html.DisplayFor(modelItem => item.VendorRemarks)</td>
                                 <td>
                                     <a href="@Url.Action("VendorAddEdit", "Vendor", new { id = item.VendorID })"><img src="~/Content/assets/img/icon/Edit20X20.png" /></a>
-                                    @*@Html("Edit", "VendorAddEdit", new { id = item.VendorID })*@ |
-                                    <a href="#"><img src="~/Content/assets/img/icon/Del20X20.png" /></a>
-                                    @*@Html.ActionLink("Delete", "Delete", new { id = item.VendorID })*@
-                                </td>
+                                     |<a href="#"><img src="~/Content/assets/img/icon/Del20X20.png" /></a>                                  
+                               </td>
                             </tr>
                         }
 
