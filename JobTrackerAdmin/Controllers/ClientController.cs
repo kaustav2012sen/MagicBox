@@ -68,7 +68,7 @@ namespace JobTrackerAdmin.Controllers
             return RedirectToAction("ClientDetails", "Client");
 
 
-            return View();
+            //return View();
         }
         #endregion
 
